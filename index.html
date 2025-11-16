@@ -1,1 +1,35 @@
-index.html
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Valgfri oppgave 2.5</title>
+  <link rel="stylesheet" href="css/stylequery.css">
+</head>
+<body>
+  <h1 class="title">Media</h1>
+
+  <article class="article01">
+    <figure class="figure01">
+      <picture class="picture01">
+        <!-- large screens -->
+        <source srcset="media/dis2000w.webp" media="(min-width:1200px)" type="image/webp">
+        <!-- medium screens -->
+        <source srcset="media/dis1000w.webp" media="(min-width:700px)" type="image/webp">
+        <!-- small screens -->
+        <source srcset="media/dis800w.webp" media="(max-width:699px)" type="image/webp">
+        <!-- fallback img -->
+        <img class="img01" src="media/dis800w.webp" alt="Fergeleiet Nesoddtangen, båt B10">
+      </picture>
+      <figcaption class="caption01">Dette er fergeleiet Nesoddtangen, som er båt B10</figcaption>
+    </figure>
+  </article>
+
+  <article class="article02 flex01">
+    <section class="left01">Veibeskrivelse: Kryss gata fra Sandakersenteret, går ned gata 
+        forbi mølla (siloene) og ser til høyre.</section>
+    <section class="right02">Denne elefanten finner du dersom du går gangbrua fra Maridalsveien 
+        til Myra, rett nord for Fylkesvei 161, Marcus Thranes gate</section>
+  </article>
+</body>
+</html>
