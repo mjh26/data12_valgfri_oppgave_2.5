@@ -1,6 +1,13 @@
-/* Basic reset and typography */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html,body { height: 100%; }
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+html,body { 
+  height: 100%; 
+}
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   line-height: 1.4;
@@ -9,14 +16,12 @@ body {
   padding: 1rem;
 }
 
-/* Heading */
 .heading01 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-/* Article with picture */
 .article01 {
   max-width: 1100px;
   margin: 0 auto 1.5rem auto;
@@ -30,14 +35,12 @@ body {
 .picture01 { display: block; width: 100%; }
 .img01 { display: block; width: 100%; height: auto; }
 
-/* Caption styling */
 .caption01 {
   padding: 0.75rem 1rem;
   font-size: 0.95rem;
   background: #302b2b;
 }
 
-/* Flex container */
 .flex01 {
   display: flex;
   gap: 1rem;
@@ -45,7 +48,6 @@ body {
   margin: 0 auto;
 }
 
-/* Left and Right sections as backgrounds */
 .left01, .right02 {
   flex: 1 1 0;
   min-height: 220px;
@@ -60,7 +62,6 @@ body {
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 
-/* Set background images (default: mobile-sized images) */
 .left01 {
   background-image: url("media/aker-bru780w.webp");
 }
@@ -68,25 +69,41 @@ body {
   background-image: url("media/aker-elef780w.webp");
 }
 
-/* Media queries in CSS to swap background images and adjust layout */
 @media (min-width: 700px) {
-  /* use larger background images on medium screens */
-  .left01 { background-image: url("media/aker-bru1200w.webp"); }
-  .right02 { background-image: url("media/aker-elef1200w.webp"); }
+  .left01 { 
+    background-image: url("media/aker-bru1200w.webp"); 
+  }
+  .right02 { 
+    background-image: url("media/aker-elef1200w.webp"); 
+  }
 
-  .heading01 { font-size: 2rem; }
-  .caption01 { font-size: 1rem; }
-  .left01, .right02 { min-height: 260px; }
+  .heading01 { 
+    font-size: 2rem; 
+  }
+  .caption01 { 
+    font-size: 1rem; 
+  }
+  .left01, .right02 { 
+    min-height: 260px; 
+  }
 }
 
 @media (min-width: 1200px) {
-  /* desktop: horizontal layout with larger images */
-  .left01 { background-image: url("media/aker-bru2000w.webp"); }
-  .right02 { background-image: url("media/aker-elef2000w.webp"); }
+  .left01 { 
+    background-image: url("media/aker-bru2000w.webp"); 
+  }
+  .right02 { 
+    background-image: url("media/aker-elef2000w.webp"); 
+  }
 
-  .flex01 { gap: 1.5rem; }
-  .left01, .right02 { min-height: 360px; padding: 1.5rem; }
+  .flex01 { 
+    gap: 1.5rem; 
+  }
+  .left01, .right02 { 
+    min-height: 360px; padding: 1.5rem; 
+  }
 }
 
-/* Accessibility and small tweaks */
-.img01[alt=""] { display: none; }
+.img01[alt=""] { 
+  display: none; 
+}
